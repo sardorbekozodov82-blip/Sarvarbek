@@ -21,13 +21,13 @@
 //                " " + notebook.country + "da ishlab chiqarilgan ");
 //    }
 //}
-//
- //
-//package oop;
-//
-//public class CarModels {
-//    public static void main(String[] args){
-//        Car car = new Car();
-//        Car car1 = new Car("black","gentra");
-//    }
-//}
+
+
+package oop;
+
+public class CarModels {
+    public static void main(String[] args){
+        Car car = new Car();
+        Car car1 = new Car("black","gentra");
+    }
+}
