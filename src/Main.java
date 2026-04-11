@@ -57,3 +57,84 @@
 //        return speed / 3.6;
 //    }
 //}
+//
+//import java.util.Scanner;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//
+//    }
+//}
+//
+//import java.util.Scanner;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        int a = sc.nextInt();
+//
+//        if (a%2==0 ) System.out.println(a);
+//        else System.out.println(a*2);
+//    }
+//}
+
+//import java.util.Scanner;
+// public class Main {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int a = sc.nextInt();
+//         System.out.println(7-a);
+//     }
+//}
+//
+//import java.util.Scanner;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        int a = sc.nextInt();
+//        int b = sc.nextInt();
+//
+//        if(a==b) System.out.println("=");
+//        else if (a<b) {
+//            System.out.println("<");
+//        }
+//        else if(a>b) {
+//            System.out.println(">");
+//        }
+//    }
+//}
+//
+//import java.util.Scanner;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        long a = sc.nextLong();
+//        String son = Long.toBinaryString(a);
+//        int sum = Long.bitCount(a);
+//        String sb = Integer.toBinaryString(sum);
+//        System.out.println(son+" "+sb);
+//    }
+//}
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+        int m = input.nextInt();
+        int a = input.nextInt();
+
+        if (m<=n){
+            System.out.println(1);
+        }else {
+            int d = m-a;
+            int s =(n - m )/d + 1;
+            System.out.println(s);
+        }
+    }
+}
