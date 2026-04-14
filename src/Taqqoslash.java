@@ -1,9 +1,6 @@
+import java.util.*;
 
-
-
-import java.util.Scanner;
-
-public class Partalar {
+public class Taqqoslash {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -11,8 +8,11 @@ public class Partalar {
         int b = sc.nextInt();
         int c = sc.nextInt();
 
-        int desks = (a + 1) / 2 + (b + 1) / 2 + (c + 1) / 2;
+        Set<Integer> set = new HashSet<>();
+        set.add(a);
+        set.add(b);
+        set.add(c);
 
-        System.out.println(desks);
+        System.out.println(set.size());
     }
 }

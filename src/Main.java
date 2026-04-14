@@ -118,23 +118,114 @@
 //        System.out.println(son+" "+sb);
 //    }
 //}
-
+//
+//
+//import java.util.Scanner;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner input = new Scanner(System.in);
+//        int n = input.nextInt();
+//        int m = input.nextInt();
+//        int a = input.nextInt();
+//
+//        if (m<=n){
+//            System.out.println(1);
+//        }else {
+//            int d = m-a;
+//            int s =(n - m )/d + 1;
+//            System.out.println(s);
+//        }
+//    }
+//}
+//
+//import java.util.Scanner;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//
+//        int h = sc.nextInt();
+//        int l = sc.nextInt();
+//
+//        System.out.println((l - 1) + " " + (h - 1));
+//    }
+//}
+//
+//import java.util.Scanner;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        int a = sc.nextInt();
+//        int d = a/6;
+//        int c = 4*d;
+//        int f = d;
+//        System.out.println(d+" "+c+" "+f);
+//    }
+//}
+//
+//import java.util.Scanner;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        int a = sc.nextInt();
+//        System.out.println(a-3);
+//    }
+//}
+//
+//import java.util.Scanner;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//    }
+//}
+//
 
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        int n = input.nextInt();
-        int m = input.nextInt();
-        int a = input.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
 
-        if (m<=n){
-            System.out.println(1);
-        }else {
-            int d = m-a;
-            int s =(n - m )/d + 1;
-            System.out.println(s);
+        String[] birlik = {
+                "", "bir", "ikki", "uch", "to'rt",
+                "besh", "olti", "yetti", "sakkiz", "to'qqiz"
+        };
+
+        String[] onlik = {
+                "", "o'n", "yigirma", "o'ttiz", "qirq",
+                "ellik", "oltmish", "yetmish", "sakson", "to'qson"
+        };
+
+        if (n == 1000) {
+            System.out.println("bir ming");
+            return;
         }
+
+        int yuz = n / 100;
+        int on = (n % 100) / 10;
+        int bir = n % 10;
+
+        String result = "";
+
+        if (yuz > 0) {
+            result += birlik[yuz] + " yuz";
+        }
+
+        if (on > 0) {
+            if (!result.isEmpty()) result += " ";
+            result += onlik[on];
+        }
+
+        if (bir > 0) {
+            if (!result.isEmpty()) result += " ";
+            result += birlik[bir];
+        }
+
+        System.out.println(result);
     }
 }
